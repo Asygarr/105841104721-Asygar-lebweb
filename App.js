@@ -6,39 +6,43 @@ export default function App() {
     <View
       style={{
         flex: 1,
+        // alignItems: kolom,
+        // justifyContent: baris,
       }}
     >
       <View
         style={{
           flex: 1,
-          flexDirection: "row",
+          alignItems: "flex-start",
+          justifyContent: "flex-start",
         }}
       >
         <View
           style={{
-            flex: 1,
+            width: 100,
+            height: 100,
             backgroundColor: "red",
-          }}
-        ></View>
-        <View
-          style={{
-            flex: 1,
-            backgroundColor: "blue",
+            borderRadius: 10,
           }}
         ></View>
       </View>
+
       <View
         style={{
           flex: 1,
-          backgroundColor: "green",
+          alignItems: "flex-end",
+          justifyContent: "flex-end",
         }}
-      ></View>
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: "orange",
-        }}
-      ></View>
+      >
+        <View
+          style={{
+            width: 100,
+            height: 100,
+            backgroundColor: "blue",
+            borderRadius: 10,
+          }}
+        ></View>
+      </View>
     </View>
   );
 }
