@@ -20,12 +20,24 @@ export default function App() {
       >
         <View
           style={{
-            width: 100,
-            height: 100,
+            width: 130,
+            height: 80,
             backgroundColor: "red",
             borderRadius: 10,
+            marginRight: 10,
+            justifyContent: "center",
+            alignItems: "center",
           }}
-        ></View>
+        >
+          <Text
+            style={{
+              color: "white",
+              fontSize: 20,
+            }}
+          >
+            Sign In
+          </Text>
+        </View>
       </View>
 
       <View
@@ -37,12 +49,24 @@ export default function App() {
       >
         <View
           style={{
-            width: 100,
-            height: 100,
+            width: 130,
+            height: 80,
             backgroundColor: "blue",
             borderRadius: 10,
+            marginLeft: 10,
+            justifyContent: "center",
+            alignItems: "center",
           }}
-        ></View>
+        >
+          <Text
+            style={{
+              color: "white",
+              fontSize: 20,
+            }}
+          >
+            Sign Up
+          </Text>
+        </View>
       </View>
     </View>
   );
