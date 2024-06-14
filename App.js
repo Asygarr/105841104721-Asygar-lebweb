@@ -8,13 +8,14 @@ export default function App() {
         flex: 1,
         // alignItems: kolom,
         // justifyContent: baris,
+        flexDirection: "row",
       }}
     >
       <View
         style={{
           flex: 1,
-          alignItems: "flex-start",
-          justifyContent: "flex-start",
+          alignItems: "flex-end",
+          justifyContent: "center",
         }}
       >
         <View
@@ -30,8 +31,8 @@ export default function App() {
       <View
         style={{
           flex: 1,
-          alignItems: "flex-end",
-          justifyContent: "flex-end",
+          alignItems: "flex-start",
+          justifyContent: "center",
         }}
       >
         <View
