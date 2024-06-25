@@ -21,11 +21,11 @@ const AppNavigation = () => {
           component={LoginScreen}
           options={{ headerShown: false }}
         />
-        {/* <Stack.Screen
+        <Stack.Screen
           name="Forgot Password"
           component={ForgotPassword}
           options={{ headerShown: false }}
-        /> */}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

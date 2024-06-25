@@ -63,7 +63,7 @@ const LoginScreen = () => {
             marginTop: 10,
             marginBottom: 25,
           }}
-          onPress={() => navigation.navigate("Login")}
+          onPress={() => navigation.navigate("Forgot Password")}
         >
           <Text
             style={{

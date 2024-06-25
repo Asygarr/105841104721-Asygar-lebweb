@@ -10,6 +10,7 @@ export const ButtonCustom = ({ color, text }) => {
         borderRadius: 25,
         justifyContent: "center",
         alignItems: "center",
+        marginVertical: 15,
       }}
     >
       <Text

@@ -1,6 +1,10 @@
 import { TextInput } from "react-native";
 
-export const TextInputCustom = ({ keyboardType, placeholder, secureTextEntry }) => {
+export const TextInputCustom = ({
+  keyboardType,
+  placeholder,
+  secureTextEntry,
+}) => {
   return (
     <TextInput
       keyboardType={keyboardType}
@@ -10,7 +14,7 @@ export const TextInputCustom = ({ keyboardType, placeholder, secureTextEntry }) 
         height: 40,
         width: "100%",
         padding: 10,
-        marginVertical: 10,
+        marginVertical: 15,
         borderRadius: 5,
         shadowColor: "black",
         shadowOffset: { width: 0, height: 2 },
