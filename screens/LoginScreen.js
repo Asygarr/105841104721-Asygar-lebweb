@@ -4,7 +4,7 @@ import { TextInputCustom } from "../component/TextInputCuntom";
 import { ButtonCustom } from "../component/ButtonCustom";
 import { useNavigation } from "@react-navigation/native";
 
-const SignUpScreen = () => {
+const LoginScreen = () => {
   const navigation = useNavigation();
 
   return (
@@ -13,9 +13,29 @@ const SignUpScreen = () => {
         style={{
           flex: 1,
           justifyContent: "center",
+          alignItems: "flex-start",
           flexGrow: 1,
         }}
       >
+        <TouchableOpacity
+          style={{
+            marginTop: 50,
+            position: "absolute",
+            top: 0,
+            left: 0,
+          }}
+          onPress={() => navigation.navigate("Sign Up")}
+        >
+          <Image
+            source={require("../assets/icon.png")}
+            style={{
+              width: 24,
+              height: 24,
+              marginLeft: -6,
+            }}
+          />
+        </TouchableOpacity>
+
         <Text
           style={{
             fontSize: 34,
@@ -23,7 +43,7 @@ const SignUpScreen = () => {
             fontWeight: "bold",
           }}
         >
-          Sign Up
+          Login
         </Text>
       </View>
 
@@ -33,7 +53,6 @@ const SignUpScreen = () => {
           justifyContent: "flex-start",
         }}
       >
-        <TextInputCustom keyboardType={"default"} placeholder={"name"} />
         <TextInputCustom keyboardType={"email-address"} placeholder={"email"} />
         <TextInputCustom secureTextEntry={true} placeholder={"password"} />
 
@@ -52,7 +71,7 @@ const SignUpScreen = () => {
               fontSize: 14,
             }}
           >
-            Already have an account?{" "}
+            Forgot your password?{" "}
           </Text>
           <Image
             source={require("../assets/Arrow.png")}
@@ -60,7 +79,7 @@ const SignUpScreen = () => {
           />
         </TouchableOpacity>
 
-        <ButtonCustom color={"#DB3022"} text={"Sign Up"} />
+        <ButtonCustom color={"#DB3022"} text={"Login"} />
       </View>
 
       <View
@@ -107,4 +126,4 @@ const SignUpScreen = () => {
   );
 };
 
-export default SignUpScreen;
+export default LoginScreen;
