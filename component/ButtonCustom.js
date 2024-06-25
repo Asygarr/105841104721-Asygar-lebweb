@@ -4,20 +4,19 @@ export const ButtonCustom = ({ color, text }) => {
   return (
     <View
       style={{
-        width: 130,
-        height: 80,
+        width: "100%",
+        height: 48,
         backgroundColor: color,
-        borderRadius: 10,
-        marginLeft: 10,
+        borderRadius: 25,
         justifyContent: "center",
         alignItems: "center",
-        margin: 10,
       }}
     >
       <Text
         style={{
           color: "white",
-          fontSize: 20,
+          fontFamily: "Metropolis",
+          fontSize: 14,
         }}
       >
         {text}
