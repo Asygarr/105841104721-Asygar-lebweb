@@ -4,7 +4,7 @@ import { TextInputCustom } from "../component/TextInputCuntom";
 import { ButtonCustom } from "../component/ButtonCustom";
 import { useNavigation } from "@react-navigation/native";
 
-const ForgotPassword = () => {
+const ForgotPasswordScreen = () => {
   const navigation = useNavigation();
 
   return (
@@ -70,4 +70,4 @@ const ForgotPassword = () => {
   );
 };
 
-export default ForgotPassword;
+export default ForgotPasswordScreen;
