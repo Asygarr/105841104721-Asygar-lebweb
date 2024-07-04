@@ -39,8 +39,7 @@ const LoginScreen = () => {
         <Text
           style={{
             fontSize: 34,
-            fontFamily: "Metropolis",
-            fontWeight: "bold",
+            fontFamily: "MetroBold",
           }}
         >
           Login
@@ -61,13 +60,12 @@ const LoginScreen = () => {
             flexDirection: "row",
             justifyContent: "flex-end",
             marginTop: 10,
-            marginBottom: 25,
           }}
           onPress={() => navigation.navigate("Forgot Password")}
         >
           <Text
             style={{
-              fontFamily: "Metropolis",
+              fontFamily: "MetroMedium",
               fontSize: 14,
             }}
           >
@@ -91,7 +89,7 @@ const LoginScreen = () => {
       >
         <Text
           style={{
-            fontFamily: "Metropolis",
+            fontFamily: "MetroMedium",
             fontSize: 14,
           }}
         >

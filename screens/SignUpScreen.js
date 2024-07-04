@@ -1,4 +1,11 @@
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  KeyboardAvoidingView,
+  Platform,
+} from "react-native";
 import React from "react";
 import { TextInputCustom } from "../component/TextInputCuntom";
 import { ButtonCustom } from "../component/ButtonCustom";
@@ -8,7 +15,10 @@ const SignUpScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <View style={{ flex: 1, marginHorizontal: 20 }}>
+    <KeyboardAvoidingView
+      style={{ flex: 1, marginHorizontal: 20 }}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+    >
       <View
         style={{
           flex: 1,
@@ -19,8 +29,7 @@ const SignUpScreen = () => {
         <Text
           style={{
             fontSize: 34,
-            fontFamily: "Metropolis",
-            fontWeight: "bold",
+            fontFamily: "MetroBold",
           }}
         >
           Sign Up
@@ -42,13 +51,12 @@ const SignUpScreen = () => {
             flexDirection: "row",
             justifyContent: "flex-end",
             marginTop: 10,
-            marginBottom: 25,
           }}
           onPress={() => navigation.navigate("Login")}
         >
           <Text
             style={{
-              fontFamily: "Metropolis",
+              fontFamily: "MetroMedium",
               fontSize: 14,
             }}
           >
@@ -72,7 +80,7 @@ const SignUpScreen = () => {
       >
         <Text
           style={{
-            fontFamily: "Metropolis",
+            fontFamily: "MetroMedium",
             fontSize: 14,
           }}
         >
@@ -103,7 +111,7 @@ const SignUpScreen = () => {
           />
         </View>
       </View>
-    </View>
+    </KeyboardAvoidingView>
   );
 };
 

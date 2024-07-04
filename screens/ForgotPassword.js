@@ -38,8 +38,7 @@ const ForgotPassword = () => {
         <Text
           style={{
             fontSize: 34,
-            fontFamily: "Metropolis",
-            fontWeight: "bold",
+            fontFamily: "MetroBold",
           }}
         >
           Forgot Password
@@ -53,7 +52,11 @@ const ForgotPassword = () => {
         }}
       >
         <Text
-          style={{ fontFamily: "Metropolis", fontSize: 14, marginBottom: 15 }}
+          style={{
+            fontFamily: "MetroMedium",
+            fontSize: 14,
+            marginBottom: 15,
+          }}
         >
           Please, enter your email address. You will receive a link to create a
           new password via email.

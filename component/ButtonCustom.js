@@ -16,7 +16,7 @@ export const ButtonCustom = ({ color, text }) => {
       <Text
         style={{
           color: "white",
-          fontFamily: "Metropolis",
+          fontFamily: "MetroMedium",
           fontSize: 14,
         }}
       >

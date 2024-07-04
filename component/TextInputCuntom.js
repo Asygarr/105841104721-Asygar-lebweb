@@ -22,6 +22,7 @@ export const TextInputCustom = ({
         shadowRadius: 3.84,
         elevation: 5,
         backgroundColor: "white",
+        fontFamily: "MetroMedium",
       }}
     />
   );
