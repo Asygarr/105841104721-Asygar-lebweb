@@ -77,7 +77,9 @@ const LoginScreen = () => {
           />
         </TouchableOpacity>
 
-        <ButtonCustom color={"#DB3022"} text={"Login"} />
+        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+          <ButtonCustom color={"#DB3022"} text={"Login"} />
+        </TouchableOpacity>
       </View>
 
       <View

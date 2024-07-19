@@ -16,8 +16,9 @@ const SignUpScreen = () => {
 
   return (
     <KeyboardAvoidingView
+      // membuat keyboard mengikuti platform
+      enabled={Platform.OS === "ios" ? true : false}
       style={{ flex: 1, marginHorizontal: 20 }}
-      behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
       <View
         style={{
