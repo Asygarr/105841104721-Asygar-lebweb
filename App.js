@@ -2,6 +2,9 @@ import React from "react";
 import AppNavigation from "./navigation/AppNavigation";
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
+import LoginSimak from "./code/LoginSimak";
+import Api from "./code/Api";
+import UseState from "./code/UseState";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -16,5 +19,8 @@ export default function App() {
     return <AppLoading />;
   }
 
-  return <AppNavigation />;
+  // return <AppNavigation />;
+  return <UseState />
+  // return <LoginSimak />;
+  // return <Api />;
 }
