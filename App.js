@@ -20,7 +20,7 @@ export default function App() {
   }
 
   // return <AppNavigation />;
-  return <UseState />
+  // return <UseState />
   // return <LoginSimak />;
-  // return <Api />;
+  return <Api />;
 }
