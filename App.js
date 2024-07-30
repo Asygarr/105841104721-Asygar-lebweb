@@ -5,6 +5,7 @@ import { useFonts } from "expo-font";
 import LoginSimak from "./code/LoginSimak";
 import Api from "./code/Api";
 import UseState from "./code/UseState";
+import { Text } from "react-native";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -16,11 +17,13 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    // return <AppLoading />;
+    return <Text>Loading...</Text>;
   }
 
   // return <AppNavigation />;
   // return <UseState />
-  // return <LoginSimak />;
-  return <Api />;
+  return <LoginSimak />;
+  // return <Text>App</Text>;
+  // return <Api />;
 }
