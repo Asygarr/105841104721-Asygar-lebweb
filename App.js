@@ -6,6 +6,7 @@ import LoginSimak from "./code/LoginSimak";
 import Api from "./code/Api";
 import UseState from "./code/UseState";
 import { Text } from "react-native";
+import ImageSliderBox from "./code/ImageSliderBox";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,7 +24,8 @@ export default function App() {
 
   // return <AppNavigation />;
   // return <UseState />
-  return <LoginSimak />;
+  // return <LoginSimak />;
   // return <Text>App</Text>;
   // return <Api />;
+  return <ImageSliderBox />
 }
